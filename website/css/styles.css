@@ -1,0 +1,115 @@
+/* Styles for my website */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+header {
+    background-color: gray;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.inner-header {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+nav ul {
+    float: right;
+    margin-top: 30px;
+    list-style-type: none;
+
+}
+
+nav li {
+    float: left;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 200px;
+    float: left;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+    clear: both;
+}
+
+#hero {
+    background-color: mediumseagreen;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 62%;
+    background-color: lightblue;
+    float: left;
+}
+
+aside {
+    width: 35%;
+    background-color: cornflowerblue;
+    float: right;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    background-color: lightgray;
+    clear: both;
+    border-top: 1px black;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li {
+    justify-content: center;
+    margin: 0 15px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* typogrophy */
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 10px;
+    font-family: playfair, serif;
+    padding: 0 15px;
+}
