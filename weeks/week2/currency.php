@@ -4,7 +4,7 @@
 $ruble_rate = 0.017;
 $pound_rate = 1.15;
 $canadian_rate = 0.76;
-$euro = 1;
+$euro_rate = 1;
 $yen_rate = 0.0074;
 
 $ruble = 10007;     

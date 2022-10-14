@@ -36,7 +36,7 @@
                     <li><a href="weeks/week2/vars2.php">vars2.php</a></li>
                     <li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
                     <li><a href="weeks/week2/currency.php">currency.php</a></li>
-                    <li><a href="">heredoc.php</a></li>
+                    <li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
                 </ol>
             <h3>Week Three</h3>
                 <ol>
