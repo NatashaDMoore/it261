@@ -40,11 +40,11 @@
                 </ol>
             <h3>Week Three</h3>
                 <ol>
-                    <li><a href="">if.php</a></li>
-                    <li><a href="">date.php</a></li>
-                    <li><a href="">forloop.php</a></li>
-                    <li><a href="">foreach.php</a></li>
-                    <li><a href="">switch.php</a></li>
+                    <li><a href="weeks/week3/if.php">if.php</a></li>
+                    <li><a href="weeks/week3/date.php">date.php</a></li>
+                    <li><a href="weeks/week3/for-loop.php">forloop.php</a></li>
+                    <li><a href="weeks/week3/for-each.php">foreach.php</a></li>
+                    <li><a href="weeks/week3/switch.php">switch.php</a></li>
                 </ol>
         </aside>
         <footer>
