@@ -106,7 +106,6 @@ switch($today) {
 #wrapper {
     width: 500px;
     margin: 20px auto;
-
 }
 
 a {
