@@ -7,40 +7,40 @@ include('./includes/header.php');
 
     <style>
 
-body {
+.daily body {
     background-color: white;
 }
 
-#wrapper {
+.daily #wrapper {
     width: 500px;
     margin: 20px auto;
 }
 
-#wrapper a {
+.daily #wrapper a {
     text-decoration: none;
     color: <?php echo $color ?>;
 }
 
-#wrapper a:hover {
+.daily #wrapper a:hover {
     color: black;
 }
 
-h1, h2, h3, p {
+daily. h1, h2, h3, p {
     text-align: center;
     font-weight: 100;
 }
 
-h3 {
+.daily h3 {
     margin-top: 30px;
 }
 
-#wrapper li {
+.daily #wrapper li {
     padding: 5px;
     text-align: center;
     list-style-type: none;
 }
 
-#wrapper img {
+.daily #wrapper img {
     width: 500px;
     margin-top: 30px;
 }
