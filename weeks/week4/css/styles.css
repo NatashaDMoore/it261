@@ -1,0 +1,60 @@
+/* Styles for Form3*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+form {
+    margin: 0 auto 10px auto;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    height: 30px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+input[type=submit] {
+    width: auto;
+}
+
+fieldset {
+    border: 1px solid mediumseagreen;
+    padding: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+    font-size: 9em;
+    margin-top: 10px;
+}
+
+.box {
+    border: 1px solid black;
+    width: 400px;
+    margin: 20px auto;
+}

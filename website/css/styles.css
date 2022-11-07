@@ -13,11 +13,7 @@ body {
 header {
     background-color: gray;
     overflow: hidden;
-    padding: 20px 0;
-}
-
-.inner-header {
-    max-width: 1200px;
+    padding: 20px 80px;
     margin: 0px auto;
 }
 
@@ -38,7 +34,6 @@ a {
 }
 
 #logo {
-    width: 200px;
     float: left;
 }
 
@@ -49,7 +44,6 @@ a {
 }
 
 #hero {
-    background-color: mediumseagreen;
     margin-bottom: 20px;
 }
 

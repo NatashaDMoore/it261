@@ -12,27 +12,27 @@ switch (THIS_PAGE) {
 
     case 'about.php';
     $title = 'About Natasha';
-    $body = 'about-inner';
+    $body = 'about inner';
     break;
 
     case 'daily.php';
     $title = 'Daily';
-    $body = 'daily-inner';
+    $body = 'daily inner';
     break;
 
     case 'project.php';
     $title = 'Project';
-    $body = 'project-inner';
+    $body = 'project inner';
     break;
 
     case 'contact.php';
     $title = 'Contact Natasha';
-    $body = 'contact-inner';
+    $body = 'contact inner';
     break;
 
     case 'gallery.php';
     $title = 'Galley';
-    $body = 'gallery-inner';
+    $body = 'gallery inner';
     break;
 }
 
@@ -60,7 +60,7 @@ switch($today) {
         $day = '<h2>Thursday</h2>';
         $color = 'brown';
         $pic = 'mess.png';
-        $alt = 'woman speaking to man in fornt of building';
+        $alt = 'woman speaking to man in front of building';
         $content = '<h3><a href="https://substack.com/profile/6215739-liza-donnelly?utm_source=about-page">Liza Donnelly</a></h3><br>
         <p>Thursday\'s cartoon features Liza, a cartoonist and writer for The New Yorker. She is the innovator of digital live drawing, a form of visual journalism. She draws and writes about culture and politics, trying to get at what\'s funny but also what\'s important.</p>';
     break;
@@ -131,11 +131,11 @@ switch($today) {
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="css/styles.css" type="text/css"/>
  </head>
-    <body class="<?php $body; ?>">
+    <body class="<?php echo $body; ?>">
      <header>
-        <div class="inner-header">
+        <div class="inner header">
             <a href="index.php">
-                <img style="width: 150px"; id="logo" src="images/logo.png" alt="logo">
+                <img style="width: 150px;" id="logo" src="images/logo.png" alt="logo">
             </a>
 
             <!-- <nav>
