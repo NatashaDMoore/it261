@@ -7,7 +7,7 @@ include('./includes/header.php');
 
     <style>
 
-.daily body {
+body {
     background-color: white;
 }
 
@@ -25,7 +25,7 @@ include('./includes/header.php');
     color: black;
 }
 
-daily. h1, h2, h3, p {
+.daily h1, h2, h3, p {
     text-align: center;
     font-weight: 100;
 }

@@ -52,6 +52,8 @@
                     <li><a href="weeks/week4/form1.php">form1.php</a></li>
                     <li><a href="weeks/week4/form2.php">form2.php</a></li>
                     <li><a href="weeks/week4/form3.php">form3.php</a></li>
+                    <li><a href="weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
+
 
                 </ol>
         </aside>

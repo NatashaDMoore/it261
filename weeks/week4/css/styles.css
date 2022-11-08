@@ -1,4 +1,4 @@
-/* Styles for Form3*/
+/* Styles for Forms*/
 
 * {
     padding: 0;
@@ -49,12 +49,22 @@ h1, h2 {
 .error {
     color: red;
     font-style: italic;
-    font-size: 9em;
+    font-size: 1em;
     margin-top: 10px;
+    text-align: center;
 }
 
 .box {
     border: 1px solid black;
     width: 400px;
     margin: 20px auto;
+    padding: 0 10px 10px 10px;
+}
+
+p {
+    text-align: center;
+}
+
+li {
+    list-style: none;
 }
