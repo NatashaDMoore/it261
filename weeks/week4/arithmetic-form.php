@@ -71,6 +71,7 @@
         $capucinos = $_POST['capucinos'];
         $americanos = $_POST['americanos'];
         $comments = $_POST['comments'];
+        $total = $lattes + $capucinos + $americanos;
 
         // if and ifelse statement for our time - echo greetings
 
@@ -88,15 +89,17 @@
     echo '
     <div class="box">
         <h2> '.$our_time.' '.$name.'!</h2>
-        <p>We have texted your order to this number: 
+        <p>We have texted your order to: 
         <br>'.$phone.'
-        <br>You have ordered the following:</p>
+        <br>
+        <br>You have ordered the following <b>'.$total.'</b> beverages:</p>
         <ul>
             <li> '.$lattes.' lattes </li>
             <li> '.$capucinos.' capucinos</li>
             <li> '.$americanos.' americanos</li>
-
         </ul>
+        <p><b>Special Requests</b></p>
+        <p>'.$comments.'</p>
     </div>
     ';
 

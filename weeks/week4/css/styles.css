@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(238, 238, 238);
 }
 
 form {
@@ -37,7 +37,7 @@ input[type=submit] {
 }
 
 fieldset {
-    border: 1px solid mediumseagreen;
+    border: 1px solid black;
     padding: 10px;
 }
 
@@ -63,6 +63,7 @@ h1, h2 {
 
 p {
     text-align: center;
+    margin-top: 10px;
 }
 
 li {
