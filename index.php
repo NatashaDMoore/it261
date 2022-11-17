@@ -54,8 +54,13 @@
                     <li><a href="weeks/week4/form3.php">form3.php</a></li>
                     <li><a href="weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
                     <li><a href="weeks/week4/celcius.php">celcius.php</a></li>
-
-
+                </ol>
+            <h3>Week Five</h3>
+                <ol>
+                    <li><a href="weeks/week5/currency.php">currency.php</a></li>
+                    <li><a href="weeks/week5/currency2.php">currency2.php</a></li>
+                    <li><a href="weeks/week5/currency3.php">currency3.php</a></li>
+                    <li><a href="weeks/week5/null.php">null.php</a></li>
                 </ol>
         </aside>
         <footer>

@@ -32,8 +32,8 @@ if(isset($_POST['num1'])) {
 
 echo '<h2>You added '.$num1.' and '.$num2.'</h2>'; // error
 
-echo '<p>and the answer is</p>
-    <p style="color:red">'.$myTotal.'!</p>'; // error
+echo '<p style="color:red">and the answer is
+    <br>'.$myTotal.'!</p>'; // error
 
 echo '<p><a href="">Reset page</a>'; // error
 
