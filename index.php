@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="">Switch</a></li>
                 <li><a href="troubleshoot.php">Troubleshoot</a></li>
-                <li><a href="">Calculator</a></li>
+                <li><a href="calculator.php">Calculator</a></li>
                 <li><a href="">Email</a></li>
                 <li><a href="">Database</a></li>
                 <li><a href="">Gallery</a></li>
