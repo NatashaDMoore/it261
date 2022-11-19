@@ -7,7 +7,7 @@
     <title>My Portal Page</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
-<body>
+<body class="calc">
     <h1><a href="index.php">Natasha's Portal Page</a></h1>
     <!-- <h2 class="subheader">The Below Navigation Includes My BIG Assignments</h2> -->
     <div id="wrapper">
