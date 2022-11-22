@@ -25,7 +25,7 @@
 
     <label>Currency</label>
     <ul>
-        <!-- Included in value -- sticky checked box -->
+        <!-- Included in value - sticky checked box -->
         <!-- Input uses checked = "checked/unchecked" instead of select-->
         <!-- If ($_POST)currency (isset)is set (&&)AND value is (ex. 0.017) echo checked = "checked" (checks the box)-->
         <li><input type="radio" name="currency" value="0.017" <?php if(isset($_POST['currency']) && $_POST['currency'] == 0.017) echo 'checked="checked"' ;?>>Rubles</li>
