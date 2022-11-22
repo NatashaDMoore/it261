@@ -93,7 +93,7 @@ if(isset($_POST['name'],
 $_POST['email'],
 $_POST['amount'],
 $_POST['currency'],
-$_POST['bank'])) {
+$_POST['bank'],)) {
 
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -117,13 +117,41 @@ $_POST['bank'])) {
 
         </div>
         ';
+    
+if($dollars <= 100) {
+    echo '<div class="poor">
+            <iframe src="https://giphy.com/embed/bISrck3AsmWUU" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/poor-hellogiggles-bISrck3AsmWUU">via GIPHY</a></p>
+          </div>';
+} else {
+    echo '<div class="rich">
+            <iframe src="https://giphy.com/embed/MAA3oWobZycms" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/kenny-powers-dollar-bills-MAA3oWobZycms">via GIPHY</a></p>
+          </div>';
+}
     } // end if(!empty) 
 
 } // end isset
 
+
+
 } // end server request method
 
 ?>
+
+<footer>
+            <ul>
+                <li>Copyright &copy; 2022</li>
+                <li>All Rights Reserved</li>
+                <li><a href="index.php">Web Design by Natasha Moore</a></li>
+                <li><a id="html-checker" href="#">HTML Validation</a></li>
+                <li><a id="css-checker" href="#">CSS Validation</a></li>
+                </ul>
+                
+                <script>
+                        document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+                        document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+                </script>
+
+     </footer>
     
 </body>
 </html>

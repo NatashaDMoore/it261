@@ -52,7 +52,7 @@ h2, p {
     margin-bottom: 5px;
 }
 
-box {
+.box {
     width: 400px;
     margin: 0 auto;
     padding: 10px;
@@ -63,4 +63,49 @@ box {
     color: red;
 }
 
+.poor {
+    width: 400px;
+    margin: 5px auto 50px auto;
+    padding: 10px;
+    background-color: red;
+}
+
+.rich {
+    width: 400px;
+    margin: 5px auto 50px auto;
+    padding: 10px;
+    background-color: green;
+}
+
+iframe {
+    margin: 5px auto 0px auto;
+    width: 100%;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: lightgray;
+    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li {
+    justify-content: center;
+    margin: 0 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(10, 147, 117);
+}
 
