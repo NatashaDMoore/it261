@@ -118,6 +118,7 @@ $_POST['bank'],)) {
         </div>
         ';
     
+        // Nest within (!empty) so ifelse only displays if all fields are complete
 if($dollars <= 100) {
     echo '<div class="poor">
             <iframe src="https://giphy.com/embed/bISrck3AsmWUU" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/poor-hellogiggles-bISrck3AsmWUU">via GIPHY</a></p>
