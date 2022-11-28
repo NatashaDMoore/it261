@@ -65,8 +65,8 @@
             <h3>Week Six</h3>
                 <ol>
                     <li><a href="weeks/week6/form.php">form.php</a></li>
-                    <li><a href="weeks/week6/.form2php">form2.php</a></li>
-                    <li><a href="weeks/week6/.php">.php</a></li>
+                    <li><a href="weeks/week6/form2.php">form2.php</a></li>
+                    <li><a href="weeks/week6/functions.php">functions.php</a></li>
                 </ol>
         </aside>
         <footer>
