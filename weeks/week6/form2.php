@@ -71,6 +71,37 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $privacy = $_POST['privacy'];
     }
 
+if(isset($_POST['first_name'],
+$_POST['last_name'],
+$_POST['email'],
+$_POST['gender'],
+$_POST['phone'],
+$_POST['wines'],
+$_POST['region'],
+$_POST['comments'],
+$_POST['privacy'])) {
+
+    $to = 'nmoorejunk@gmail.com';
+    $subject = 'Test Email' .date('m/d/y, h i A');
+    $body = '
+    Name: '.$first_name.' '.$last_name.' '.PHP_EOL.'
+    Email: '.$email.' '.PHP_EOL.'
+    Phone: '.$phone.' '.PHP_EOL.'
+    Gender: '.$gender.' '.PHP_EOL.'
+
+    Region: '.$region.' '.PHP_EOL.'
+    Comments: '.$comments.' '.PHP_EOL.'
+    Privacy: '.$privacy.' '.PHP_EOL.'
+    
+    ';
+
+    mail($to, $subject, $body);
+    header('Location:thx.php');
+
+} // end isset
+
+
+
 } // end server request method
 
 ?>
@@ -158,9 +189,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <span class="error"><?php echo $region_err  ;?></span>
 
         <!-- PHP must go between textarea tags NOT within the opening tag! -->
-
-<!-- **  ERROR COMMENTS NOT STICKY -->
-
         <label>Comments</label>
         <textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']); ?></textarea>
         <span class="error"><?php echo $comments_err  ;?></span>
@@ -173,8 +201,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         </ul>
         <span class="error"><?php echo $privacy_err  ;?></span>
 
+        <!-- SUBMIT -->
         <input type="submit" value="SUBMIT">
 
+        <!-- RESET -->
         <input type="button" onclick="window.location.href='<?php echo $_SERVER['PHP_SELF']  ;?>'" value="RESET">
 
     </fieldset>
