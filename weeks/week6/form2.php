@@ -1,8 +1,7 @@
 <?php
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // define variables above request method!
 
-    // DEFINE VARIABLES
     $first_name_err = '';
     $last_name_err = '';
     $email_err = '';
@@ -12,6 +11,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $region_err = '';
     $comments_err = '';
     $privacy_err = '';
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // ERROR MESSAGE if(empty)
     // assigning error messages to variables
@@ -52,7 +53,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $wines = $_POST['wines'];
     }
 
-    if(empty($_POST['region'])) {
+    if($_POST['region'] == NULL) {
         $region_err = 'Required';
     } else {
         $region = $_POST['region'];
@@ -161,7 +162,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!-- **  ERROR COMMENTS NOT STICKY -->
 
         <label>Comments</label>
-        <textarea name="comments"><?php if(isset($_POST['comments]'])) echo htmlspecialchars($_POST['comments']); ?></textarea>
+        <textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']); ?></textarea>
         <span class="error"><?php echo $comments_err  ;?></span>
 
         <label>Privacy</label>
@@ -173,8 +174,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <span class="error"><?php echo $privacy_err  ;?></span>
 
         <input type="submit" value="SUBMIT">
-
-<!-- ** ERROR RESET throwing undefined variable error -->
 
         <input type="button" onclick="window.location.href='<?php echo $_SERVER['PHP_SELF']  ;?>'" value="RESET">
 
