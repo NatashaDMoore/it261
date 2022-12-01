@@ -1,75 +1,101 @@
 <?php
-
-    // define variables above request method!
-
-    $first_name_err = '';
-    $last_name_err = '';
-    $email_err = '';
-    $gender_err = '';
-    $phone_err = '';
-    $wines_err = '';
-    $region_err = '';
-    $comments_err = '';
-    $privacy_err = '';
+ // define variables above request method!
+ $first_name = '';
+ $last_name = '';
+ $email = '';
+ $comments = '';
+ $privacy = '';
+ $gender = '';
+ $phone = '';
+ $wines = '';
+ $region = '';
+ $first_name_err = '';
+ $last_name_err = '';
+ $email_err = '';
+ $phone_err = '';
+ $comments_err = '';
+ $privacy_err = '';
+ $gender_err = '';
+ $wines_err = '';
+ $region_err = '';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    // ERROR MESSAGE if(empty)
-    // assigning error messages to variables
-    // cannot echo above DOCTYPE
-    if(empty($_POST['first_name'])) {
-        $first_name_err = 'Required';
-    } else {
-        $first_name = $_POST['first_name'];
-    }
+ // ERROR MESSAGE if(empty)
+ // assigning error messages to variables
+ if(empty($_POST['first_name'])) {
+     $first_name_err = 'Required';
+ } else {
+     $first_name = $_POST['first_name'];
+ }
 
-    if(empty($_POST['last_name'])) {
-        $last_name_err = 'Required';
-    } else {
-        $last_name = $_POST['last_name'];
-    }
+ if(empty($_POST['last_name'])) {
+     $last_name_err = 'Required';
+ } else {
+     $last_name = $_POST['last_name'];
+ }
 
-    if(empty($_POST['email'])) {
-        $email_err = 'Required';
-    } else {
-        $email = $_POST['email'];
-    }
+ if(empty($_POST['email'])) {
+     $email_err = 'Required';
+ } else {
+     $email = $_POST['email'];
+ }
 
-    if(empty($_POST['gender'])) {
-        $gender_err = 'Required';
-    } else {
-        $gender_name = $_POST['gender'];
-    }
+ if(empty($_POST['gender'])) {
+     $gender_err = 'Required';
+ } else {
+     $gender = $_POST['gender'];
+ }
 
-    if(empty($_POST['phone'])) {
-        $phone_err = 'Required';
-    } else {
-        $phone = $_POST['phone'];
-    }
-    
-    if(empty($_POST['wines'])) {
-        $wines_err = 'Please select a wine';
-    } else {
-        $wines = $_POST['wines'];
-    }
+ if(empty($_POST['phone'])) {
+     $phone_err = 'Required';
+ } else {
+     $phone = $_POST['phone'];
+ }
+ 
+ if(empty($_POST['wines'])) {
+     $wines_err = 'Please select a wine';
+ } else {
+     $wines = $_POST['wines'];
+ }
 
-    if($_POST['region'] == NULL) {
-        $region_err = 'Required';
-    } else {
-        $region = $_POST['region'];
-    }
-    
-    if(empty($_POST['comments'])) {
-        $comments_err = 'Required';
-    } else {
-        $comments = $_POST['comments'];
-    }
+ if($_POST['region'] == NULL) {
+     $region_err = 'Required';
+ } else {
+     $region = $_POST['region'];
+ }
+ 
+ if(empty($_POST['comments'])) {
+     $comments_err = 'Required';
+ } else {
+     $comments = $_POST['comments'];
+ }
 
-    if(empty($_POST['privacy'])) {
-        $privacy_err = 'Required';
-    } else {
-        $privacy = $_POST['privacy'];
-    }
+ if(empty($_POST['privacy'])) {
+     $privacy_err = 'Required';
+ } else {
+     $privacy = $_POST['privacy'];
+ }
+
+// Wines function
+ // create function my_wines and reference variable $wines that will be an array.
+function my_wines($wines) {
+ // create $my-return variable and it's currently empty.
+$my_return ='';
+
+if(!empty($_POST['wines'])) {
+ // assign $my_return to implode function including $_POST['wines']
+ // Single quote and comma!
+$my_return = implode(', ', $_POST['wines']);
+
+} else {
+ $wines_err = 'Please select a wine';
+}
+
+ // MUST return $my_return BEFORE the end of the function!
+return $my_return;
+
+} // end function
 
 if(isset($_POST['first_name'],
 $_POST['last_name'],
@@ -81,30 +107,37 @@ $_POST['region'],
 $_POST['comments'],
 $_POST['privacy'])) {
 
-    $to = 'nmoorejunk@gmail.com';
-    $subject = 'Test Email' .date('m/d/y, h i A');
-    $body = '
-    Name: '.$first_name.' '.$last_name.' '.PHP_EOL.'
-    Email: '.$email.' '.PHP_EOL.'
-    Phone: '.$phone.' '.PHP_EOL.'
-    Gender: '.$gender.' '.PHP_EOL.'
+ $to = 'nmoorejunk@gmail.com';
+ $subject = 'Test Email ' .date('m/d/y, h i A');
+ $body = '
+ Name: '.$first_name.' '.$last_name.' '.PHP_EOL.'
+ Email: '.$email.' '.PHP_EOL.'
+ Phone: '.$phone.' '.PHP_EOL.'
+ Gender: '.$gender.' '.PHP_EOL.'
+ Wines: '.my_wines($wines).' '.PHP_EOL.'
+ Region: '.$region.' '.PHP_EOL.'
+ Comments: '.$comments.' '.PHP_EOL.'
+ Privacy: '.$privacy.' '.PHP_EOL.'
+ ';
 
-    Region: '.$region.' '.PHP_EOL.'
-    Comments: '.$comments.' '.PHP_EOL.'
-    Privacy: '.$privacy.' '.PHP_EOL.'
-    
-    ';
+ // assign 'from' to the $header variable and add to the mail function.
+ $headers = array(
+     'From' => 'noreply@gator3401.hostgator.com'
+ );
 
-    mail($to, $subject, $body);
-    header('Location:thx.php');
+ if(!empty($first_name && $last_name && $email && $region && $wines && $gender && $comments && $privacy)) {
+
+ mail($to, $subject, $body, $headers);
+ header('Location:thx.php');
+
+ } // end if(!empty)
 
 } // end isset
-
-
 
 } // end server request method
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -149,7 +182,7 @@ $_POST['privacy'])) {
             <span class="error"><?php echo $gender_err  ;?></span>
 
         <label>Phone</label>
-        <input type="tel" name="phone">
+        <input type="tel" name="phone" value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']) ?>">
         <span class="error"><?php echo $phone_err  ;?></span>
 
             <!-- Square brackets in name indicate an array -->
@@ -214,7 +247,7 @@ $_POST['privacy'])) {
             <ul>
                 <li>Copyright &copy; 2022</li>
                 <li>All Rights Reserved</li>
-                <li><a href="index.php">Web Design by Natasha Moore</a></li>
+                <li><a href="https://natashadmoore.com/it261/index.php">Web Design by Natasha Moore</a></li>
                 <li><a id="html-checker" href="#">HTML Validation</a></li>
                 <li><a id="css-checker" href="#">CSS Validation</a></li>
                 </ul>

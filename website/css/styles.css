@@ -111,3 +111,7 @@ h1, h2, h3, p {
     font-family: playfair, serif;
     padding: 0 15px;
 }
+
+.inner h2 {
+    text-align: center;
+}

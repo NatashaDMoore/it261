@@ -1,8 +1,8 @@
 <?php
 
-// Includes Header
+// Includes header and config
+include('config.php');
 include('./includes/header.php');
-
 ?>
 
     <style>

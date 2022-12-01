@@ -93,7 +93,7 @@
             <ul>
                 <li>Copyright &copy; 2022</li>
                 <li>All Rights Reserved</li>
-                <li><a href="index.php">Web Design by Natasha Moore</a></li>
+                <li><a href="https://natashadmoore.com/it261/index.php">Web Design by Natasha Moore</a></li>
                 <li><a id="html-checker" href="#">HTML Validation</a></li>
                 <li><a id="css-checker" href="#">CSS Validation</a></li>
                 </ul>
