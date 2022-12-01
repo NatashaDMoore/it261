@@ -4,6 +4,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -108,10 +109,46 @@ h3 {
 
 h1, h2, h3, p {
     margin-bottom: 10px;
-    font-family: playfair, serif;
+    font-weight: 100;
     padding: 0 15px;
 }
 
 .inner h2 {
     text-align: center;
+}
+
+/* Daily Page */
+
+body {
+    background-color: white;
+}
+
+.daily #wrapper {
+    width: 500px;
+    margin: 20px auto;
+}
+
+
+.daily #wrapper a:hover {
+    color: black;
+}
+
+.daily h1, h2, h3, p {
+    text-align: center;
+    font-weight: 100;
+}
+
+.daily h3 {
+    margin-top: 30px;
+}
+
+.daily #wrapper li {
+    padding: 5px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.daily #wrapper img {
+    width: 500px;
+    margin-top: 30px;
 }
