@@ -433,7 +433,7 @@ header('Location:thnx.php');
 
 
 // Gallery
-$people['michelangelo_buonarroti'] = 'buona_david_David'; // David saved saved
+$people['Michelangelo_Buonarroti'] = 'buona_david_David'; // David saved saved
 $people['Salvador_Dali'] = 'sdali_persi_The Persistence of Memory'; // saved saved
 $people['Pablo_Picasso'] = 'picas_demoi_Les Demoiselles d\'Avignon'; // saved saved
 $people['Vincent_van_Gogh'] = 'vango_starr_Starry Night'; // saved saved
