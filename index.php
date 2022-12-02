@@ -68,6 +68,19 @@
                     <li><a href="weeks/week6/form2.php">form2.php</a></li>
                     <li><a href="weeks/week6/functions.php">functions.php</a></li>
                 </ol>
+                <h3>Week Seven</h3>
+                <ol>
+                    <li><a href="weeks/week7/form3.php">form3.php</a></li>
+                    <li><a href="weeks/week7/strings.php">strings.php</a></li>
+                    <li><a href="weeks/week7/pictures.php">pictures.php</a></li>
+                    <li><a href="weeks/week7/rand.php">rand.php</a></li>
+
+
+                </ol>
+                <h3>Week Eight</h3>
+                <ol>
+                    <li><a href="weeks/week8/.php">.php</a></li>
+                </ol>
         </aside>
         <footer>
             <ul>

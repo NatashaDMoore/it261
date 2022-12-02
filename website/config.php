@@ -327,11 +327,22 @@ if(empty($_POST['email'])) {
     $email = $_POST['email'];
 }
 
-if(empty($_POST['phone'])) {
-    $phone_err = 'Required';
-} else {
+// if(empty($_POST['phone'])) {
+//     $phone_err = 'Required';
+// } else {
+//     $phone = $_POST['phone'];
+// }
+
+if(empty($_POST['phone'])) { // if empty, type in your number
+    $phone_err = 'Your phone number please!';
+    } elseif(array_key_exists('phone', $_POST)){
+    if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
+    { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
+    $phone_err = 'Invalid format!';
+    } else{
     $phone = $_POST['phone'];
-}
+    } // end else
+    } // end main if
 
 if(empty($_POST['position'])) {
     $position_err = 'Required';
@@ -406,7 +417,8 @@ $headers = array(
     'From' => 'noreply@gator3401.hostgator.com'
 );
 
-if(!empty($first_name && $last_name && $email && $position && $reason && $method && $comments && $privacy)) {
+if(!empty($first_name && $last_name && $email && $position && $reason && $method && $comments && $privacy) &&
+preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
 
 mail($to, $subject, $body, $headers);
 header('Location:thnx.php');
