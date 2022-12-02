@@ -34,7 +34,7 @@ switch (THIS_PAGE) {
     break;
 
     case 'gallery.php';
-    $title = 'Galley';
+    $title = 'Gallery';
     $body = 'gallery inner';
     break;
 
@@ -51,7 +51,7 @@ $nav = array(
     'daily.php' => 'Daily',
     'project.php' => 'Project',
     'contact.php' => 'Contact',
-    'galley.php' => 'Gallery'
+    'gallery.php' => 'Gallery'
 );
 
 function make_links($nav) {
@@ -428,3 +428,20 @@ header('Location:thnx.php');
 } // end isset
 
 } // end server request method
+
+
+
+
+// Gallery
+$people['michelangelo_buonarroti'] = 'buona_david_David'; // David saved saved
+$people['Salvador_Dali'] = 'sdali_persi_The Persistence of Memory'; // saved saved
+$people['Pablo_Picasso'] = 'picas_demoi_Les Demoiselles d\'Avignon'; // saved saved
+$people['Vincent_van_Gogh'] = 'vango_starr_Starry Night'; // saved saved
+$people['Auguste_Rodin'] = 'rodin_ageof_The Age of Bronze'; //saved saved
+$people['Francisco_Goya'] = 'fgoya_satur_Saturn Devouring His Son'; // saved
+$people['Johannes_Vermeer'] = 'verme_pearl_Girl with a Pearl Earring'; //saved saved
+
+// $variable['key'] = 'value';
+// $name is key and $image is value (Assigned using the foreach loop below)
+
+// end Gallery

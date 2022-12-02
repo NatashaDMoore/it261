@@ -172,3 +172,36 @@ h1, h2, h3, p {
     width: 500px;
     margin-top: 30px;
 }
+
+/* Gallery CSS */
+
+.gallery {
+    background-color: black;
+}
+
+.gallery h2 {
+    color: whitesmoke;
+    font-size: 3em;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    margin: 30px auto;
+}
+
+.gallery td {
+    font-size: 1.2em;
+    padding: 1px;
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid white; */
+    text-align: center;
+    color: rgb(210, 180, 11);
+}
+
+.gallery table{
+    margin: 5px auto;
+}
+
+.gallery td img {
+    object-fit: cover;
+    height: 300px;
+}
