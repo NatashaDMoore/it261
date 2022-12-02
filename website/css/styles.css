@@ -7,22 +7,26 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body {
+.inner {
     background-color: white;
 }
 
+.home {
+    background-color: rgb(164, 164, 164);
+}
+
 header {
-    background-color: gray;
+    background-color: rgb(21, 55, 3);
+    /* background-color: gray; */
     overflow: hidden;
-    padding: 20px 80px;
+    padding: 0px 80px;
     margin: 0px auto;
 }
 
 nav ul {
     float: right;
-    margin-top: 30px;
+    margin-top: 55px;
     list-style-type: none;
-
 }
 
 nav li {
@@ -34,8 +38,13 @@ a {
     text-decoration: none;
 }
 
+.home a {
+    color: mediumseagreen;
+}
+
 #logo {
     float: left;
+    width: 100;
 }
 
 #wrapper {
@@ -46,12 +55,14 @@ a {
 
 #hero {
     margin-bottom: 20px;
+    width: 48%;
+    float: left;
 }
 
 main {
-    width: 62%;
-    background-color: lightblue;
-    float: left;
+    width: 48%;
+    color: white;
+    float: right;
 }
 
 aside {
@@ -95,12 +106,25 @@ p {
     line-height: 1.4;
 }
 
-h1 {
-    font-size: 2.5em;
+.home h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
 }
 
 h2 {
     font-size: 2em;
+}
+
+.home h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home p {
+    font-size: 1.2em;
+    color: rgb(21, 55, 3);
 }
 
 h3 {
@@ -118,10 +142,6 @@ h1, h2, h3, p {
 }
 
 /* Daily Page */
-
-body {
-    background-color: white;
-}
 
 .daily #wrapper {
     width: 500px;

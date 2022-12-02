@@ -399,7 +399,7 @@ $_POST['method'],
 $_POST['comments'],
 $_POST['privacy'])) {
 
-$to = 'nmoorejunk@gmail.com';
+$to = 'szemeo@mystudentswa.com';
 $subject = 'Contact Request ' .date('m/d/y, h i A');
 $body = '
 Name: '.$first_name.' '.$last_name.' '.PHP_EOL.'
