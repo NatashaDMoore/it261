@@ -19,7 +19,7 @@ body {
 nav {
     height: 60px;
     line-height: 60px;
-    background-color: darkslategray;
+    background-color: rgb(47, 79, 79);
 }
 
 nav li {

@@ -29,7 +29,12 @@
             <img class="mamp" src="images/nmoore_error.png" alt="proof of error reporting">
         </main>
         <aside>
-            <h2>Weekly Assignments</h2>
+        <h2>Weekly Assignments</h2>
+            <h3>Quick Links</h3>
+                <ol>
+                    <li style="list-style-type: circle;"><a href="website/index.php">Website</a></li>
+                    <li style="list-style-type: circle;"><a href="adminer-4.8.1.php">Adminer</a></li>
+                </ol>
             <h3>Week Two</h3>
                 <ol>
                     <li><a href="weeks/week2/var.php">var.php</a></li>
