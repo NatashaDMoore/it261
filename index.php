@@ -79,12 +79,10 @@
                     <li><a href="weeks/week7/strings.php">strings.php</a></li>
                     <li><a href="weeks/week7/pictures.php">pictures.php</a></li>
                     <li><a href="weeks/week7/rand.php">rand.php</a></li>
-
-
                 </ol>
                 <h3>Week Eight</h3>
                 <ol>
-                    <li><a href="weeks/week8/.php">.php</a></li>
+                    <li><a href="weeks/week8/people.php">people.php</a></li>
                 </ol>
         </aside>
         <footer>
