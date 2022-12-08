@@ -1,6 +1,7 @@
 <?php
 
 include('config.php');
+include('./includes/header.php');
 
 $sql = 'SELECT * FROM people';
 // must now connect to database
@@ -37,4 +38,28 @@ if(mysqli_num_rows($result) >0) {
     } // end while
 
 
-} // end if number of rows is greater than 0
+} else { // end if number of rows is greater than 0
+
+echo 'Nobody\'s home';
+
+} // end else
+
+
+
+// We must now release the server
+
+@mysqli_free_result($result); // $result is the queri for our server connection ($iConn)
+
+// Now close the connection
+
+@mysqli_close($iConn); // close connection to server
+
+?>
+
+<aside>
+    <h3>Random Images</h3>
+
+</aside>
+
+<?php
+include('./includes/footer.php');
