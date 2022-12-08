@@ -30,7 +30,7 @@ if(mysqli_num_rows($result) >0) {
             <li><b>Last Name:</b>'.$row['last_name'].'</li>
             <li><b>Birthdate:</b>'.$row['birthdate'].'</li>
         </ul>
-        <p>Click for more information about <a href="">'.$row['first_name'].'</a></p>
+        <p><a href="people-view.php?id='.$row['people_id'].' ">More information about '.$row['first_name'].'</a></p>
         
         ';
 
