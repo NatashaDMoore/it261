@@ -4,5 +4,5 @@
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'natasore_seattle_central');
-define('DB_USER', 'natasore_seattle_central_user');
-define('DB_PASSWORD', 'MAlbright37');
+define('DB_USER', '');
+define('DB_PASSWORD', '');
