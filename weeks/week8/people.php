@@ -2,7 +2,13 @@
 
 include('config.php');
 include('./includes/header.php');
+?>
 
+<!-- wrapper -->
+<div id="wrapper">
+<main>
+
+<?php
 $sql = 'SELECT * FROM people';
 // must now connect to database
 
@@ -19,6 +25,7 @@ $result = mysqli_queri($iConn,$sql) or die(myError(__FILE__,__LINE__,mysqli_erro
 
 // We are asking if the number of rows is greater than 0
 if(mysqli_num_rows($result) >0) {
+    
     // read the rows using a 'while loop'
     while($row = mysqli_fetch_assoc($result)) {
         // $result is the row
@@ -55,11 +62,14 @@ echo 'Nobody\'s home';
 @mysqli_close($iConn); // close connection to server
 
 ?>
-
+</main>
 <aside>
     <h3>Random Images</h3>
 
 </aside>
+
+</div>
+<!-- end wrapper -->
 
 <?php
 include('./includes/footer.php');

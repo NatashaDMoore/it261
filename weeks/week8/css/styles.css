@@ -1,0 +1,85 @@
+/* Styles for People pages */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(208, 208, 208);
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+aside {
+    width: 35%;
+    float: right;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: lightgray;
+    clear: both;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li {
+    justify-content: center;
+    margin: 0 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(10, 147, 117);
+    clear: both;
+}
+
+li {
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: mediumseagreen;
+}
+
+/* Typogrophy */
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: darkslategray;
+    font-weight: 200;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
