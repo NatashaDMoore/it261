@@ -8,12 +8,21 @@
 }
 
 body {
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(234, 234, 234);
+    margin-bottom: 50px;
+    padding-top: 5px;
 }
 
 #wrapper {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-bottom: 50px;
+
+}
+
+main {
+    float: left;
+    width: 62%;
 }
 
 aside {
@@ -21,11 +30,37 @@ aside {
     float: right;
 }
 
+aside p {
+    margin-top: 10px;
+}
+
+aside img {
+    display: block;
+    margin: 10px auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.sock {
+    height: 5px;
+    width: 100%;
+    clear: both;
+}
+
 footer {
     height: 50px;
     line-height: 50px;
-    background-color: lightgray;
+    background-color: rgb(234, 234, 234);
     clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer ul {
@@ -45,41 +80,40 @@ footer a {
     clear: both;
 }
 
+ul {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
 li {
     margin-bottom: 5px;
-    text-decoration: none;
+    list-style: none;
+}
+
+li p {
+    margin: 15px 40px 20px 0;
 }
 
 a {
     text-decoration: none;
-    color: mediumseagreen;
+    color: rgb(31, 135, 78);
 }
 
 /* Typogrophy */
 
 h1 {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-h1 a {
-    text-decoration: none;
-    color: black;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 200;
 }
 
 h2 {
-    font-size: 2em;
-    text-align: center;
-    color: darkslategray;
-    font-weight: 200;
-    margin-top: 40px;
-    margin-bottom: 15px;
-}
+    color: #2f4f4f;
+    font-weight: 100;
+    margin: 10px 10px;}
 
 h3 {
     font-weight: 100;
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin: 10px 10px;
 }

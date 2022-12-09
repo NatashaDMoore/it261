@@ -23,9 +23,9 @@ switch (THIS_PAGE) {
     $body = 'daily inner';
     break;
 
-    case 'project.php';
-    $title = 'Project';
-    $body = 'project inner';
+    case 'film.php';
+    $title = 'Film';
+    $body = 'film inner';
     break;
 
     case 'contact.php';
@@ -49,7 +49,7 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'project.php' => 'Project',
+    'film.php' => 'Film',
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery'
 );
@@ -433,15 +433,37 @@ header('Location:thnx.php');
 
 
 // Gallery
-$people['Michelangelo_Buonarroti'] = 'buona_david_David'; // David saved saved
-$people['Salvador_Dali'] = 'sdali_persi_The Persistence of Memory'; // saved saved
-$people['Pablo_Picasso'] = 'picas_demoi_Les Demoiselles d\'Avignon'; // saved saved
-$people['Vincent_van_Gogh'] = 'vango_starr_Starry Night'; // saved saved
-$people['Auguste_Rodin'] = 'rodin_ageof_The Age of Bronze'; //saved saved
-$people['Francisco_Goya'] = 'fgoya_satur_Saturn Devouring His Son'; // saved
-$people['Johannes_Vermeer'] = 'verme_pearl_Girl with a Pearl Earring'; //saved saved
+$people['Michelangelo_Buonarroti'] = 'buona_david_David';
+$people['Salvador_Dali'] = 'sdali_persi_The Persistence of Memory';
+$people['Pablo_Picasso'] = 'picas_demoi_Les Demoiselles d\'Avignon';
+$people['Vincent_van_Gogh'] = 'vango_starr_Starry Night';
+$people['Auguste_Rodin'] = 'rodin_ageof_The Age of Bronze';
+$people['Francisco_Goya'] = 'fgoya_satur_Saturn Devouring His Son'; 
+$people['Johannes_Vermeer'] = 'verme_pearl_Girl with a Pearl Earring'; 
 
 // $variable['key'] = 'value';
 // $name is key and $image is value (Assigned using the foreach loop below)
 
 // end Gallery
+
+
+// Film Page
+
+define('DEBUG', 'TRUE');  // We want to see errors
+
+include('credentials.php');
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  } 
+}
+
+

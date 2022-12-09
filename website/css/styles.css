@@ -51,6 +51,7 @@ a {
     max-width: 1200px;
     margin: 20px auto;
     clear: both;
+    overflow: auto;
 }
 
 #hero {
@@ -209,4 +210,48 @@ h1, h2, h3, p {
 .gallery td img {
     object-fit: cover;
     height: 300px;
+}
+
+/* Film Page */
+
+.film main {
+    width: 50%;
+    color: rgb(47, 79, 79);
+    float: right;
+    background-color: transparent;
+}
+
+.film aside {
+    width: 45%;
+    float: right;
+    margin-right: 20px;
+}
+
+.film h1{
+    text-align: center;
+    font-size: 3em;
+    margin: 20px auto 40px auto;
+    color: black;
+}
+
+.film h2 {
+    color: rgb(39, 70, 70);
+    text-align: left;
+}
+
+.film li {
+    list-style: none;
+    margin: 5px 0 5px 30px;
+    color: black;
+}
+
+.film li a {
+    text-decoration: none;
+    color: #3cb371;
+}
+
+.film li p {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px;
 }
