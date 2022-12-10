@@ -4,7 +4,7 @@
 
 // DB: natasore_film
 // User: natasore_admin
-// Pass: M@lbright37
+// Pass: 
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'natasore_film');
