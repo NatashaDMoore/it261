@@ -28,6 +28,11 @@ switch (THIS_PAGE) {
     $body = 'film inner';
     break;
 
+    case 'film-details.php';
+    $title = 'Film';
+    $body = 'film-details inner';
+    break;
+
     case 'contact.php';
     $title = 'Contact Natasha';
     $body = 'contact inner';

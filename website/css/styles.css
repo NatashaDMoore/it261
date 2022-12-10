@@ -73,12 +73,20 @@ aside {
     float: right;
 }
 
-footer {
-    height: 60px;
-    line-height: 60px;
-    background-color: lightgray;
+.sock {
+    height: 5px;
+    width: 100%;
     clear: both;
-    border-top: 1px black;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(234, 234, 234);
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer ul {
@@ -93,7 +101,9 @@ footer li {
 }
 
 footer a {
-    color: mediumseagreen;
+    text-decoration: none;
+    color: rgb(10, 147, 117);
+    clear: both;
 }
 
 img {
@@ -146,6 +156,7 @@ h1, h2, h3, p {
 
 .contact {
     background-color: rgb(208, 208, 208);
+    margin-bottom: 50px;
 }
 
 /* Daily Page */
@@ -153,6 +164,7 @@ h1, h2, h3, p {
 .daily #wrapper {
     width: 500px;
     margin: 20px auto;
+    margin-bottom: 60px;
 }
 
 .daily #wrapper a:hover {
@@ -183,6 +195,12 @@ h1, h2, h3, p {
 
 .gallery {
     background-color: black;
+    margin-bottom: 50px;
+}
+
+.gallery footer {
+    background-color: black;
+    color: rgb(47, 79, 79);
 }
 
 .gallery h2 {
@@ -214,6 +232,10 @@ h1, h2, h3, p {
 
 /* Film Page */
 
+.film {
+    margin-bottom: 50px;
+}
+
 .film main {
     width: 50%;
     color: rgb(47, 79, 79);
@@ -225,6 +247,7 @@ h1, h2, h3, p {
     width: 45%;
     float: right;
     margin-right: 20px;
+    background-color: transparent;
 }
 
 .film h1{
@@ -239,19 +262,84 @@ h1, h2, h3, p {
     text-align: left;
 }
 
-.film li {
+.film main li {
     list-style: none;
     margin: 5px 0 5px 30px;
     color: black;
 }
 
-.film li a {
+.film main li a {
     text-decoration: none;
     color: #3cb371;
 }
 
-.film li p {
+.film main li p {
     text-align: left;
     padding: 0;
     margin-bottom: 20px;
+}
+
+/* Film detail page */
+
+.film-details {
+    margin-bottom: 50px;
+    background-color: black;
+}
+
+.film-details #wrapper {
+    max-width: 1300px;
+}
+
+.film-details main {
+    width: 50%;
+    color: rgb(47, 79, 79);
+    float: right;
+    background-color: transparent;
+    padding-top: 40px;
+}
+
+.film-details aside {
+    width: 48%;
+    float: right;
+    background-color: transparent;
+    text-align: start;
+}
+
+.film-details figcaption {
+    text-align: center;
+}
+
+.film-details h1{
+    text-align: center;
+    font-size: 3em;
+    margin: 20px auto 10px auto;
+    color: white;
+}
+
+.film-details h2 {
+    color: rgb(180, 239, 239);
+    text-align: left;
+}
+
+.film-details main li {
+    list-style: none;
+    margin: 5px 0 5px 30px;
+    color: rgb(103, 190, 190);
+}
+
+.film-details main a {
+    text-decoration: none;
+    color: #3cb371;
+}
+
+.film-details main li p {
+    text-align: left;
+    color: rgb(103, 190, 190);
+    padding: 0;
+    margin: 5px auto 10px auto;
+}
+
+.film-details footer {
+    background-color: black;
+    color: rgb(47, 79, 79);
 }

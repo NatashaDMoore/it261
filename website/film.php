@@ -42,7 +42,7 @@ if(mysqli_num_rows($result) >0) {
             <li><b>Directed by: </b>'.$row['director1'].''.$row['director2'].'</li>
             <li><b>Starring: </b>'.$row['stars1'].''.$row['stars2'].''.$row['stars3'].'</li>
             <li>
-            <p><a href="people-view.php?id='.$row['film_id'].'">DETAILS</a></p>
+            <p><a href="film-details.php?id='.$row['film_id'].'">DETAILS</a></p>
             </li>
         </ul>        
         ';
