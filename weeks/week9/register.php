@@ -1,8 +1,8 @@
 <?php
 include('server.php');
-// include('.includes/header.php);
+include('./includes/header.php');
 ?>
-
+<div id="wrapper">
 <h1>Register</h1>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
@@ -27,10 +27,16 @@ include('server.php');
 
     <button type="submit" name="reg_user" class="btn">Register</button>
 
-    <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>'" class="btn">RESET</button>
+    <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>'" class="btn">Reset</button>
     <!-- window.location.href returns the href (URL) of the current page -->
     <!-- The $_SERVER[“PHP_SELF”] is a super global variable that returns the filename of the currently executing script. It sends the submitted form data to the same page, instead of jumping on a different page. -->
 
+    <?php include('errors.php'); ;?>
 
 </fieldset>
 </form>
+<p>Already have an account?</p>
+<p><a href="login.php">Login</a></p>
+</div>
+<?php
+include('./includes/footer.php');

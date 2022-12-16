@@ -1,0 +1,144 @@
+/* Styles for form */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: silver; 
+    margin-bottom: 50px;    
+} 
+
+/* header {
+    height: 100px;
+    background-color: rgb(47, 79, 79);
+} */
+
+.success {
+    float: left;
+    width: 200px;
+    margin: 10px;
+}
+
+.welcome-logout {
+    float: right;
+    margin: 10px;
+    padding: 6px;
+    width: 15%;
+    background-color: rgb(232, 232, 232);
+}
+
+#wrapper {
+    max-width: 1200;
+    margin: 30px auto;
+    clear: both;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.517);
+}
+
+fieldset {
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    margin: 10px auto 10px auto;
+    width: 100%;
+    padding: 5px;
+}
+
+input[type="button"] {
+    margin: 0px auto 0px auto;
+    display: block;
+    width: 100px;
+    padding: 5px;
+}
+
+button {
+    margin-bottom: 5px;
+    /* display:block; */
+    width: 100px;
+    padding: 5px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+form ul {
+    list-style: none;
+}
+
+
+/* Typography */
+h1, h2, h3, p {
+    text-align: center;
+    margin: 10px auto 5px auto;
+}
+
+.error {
+    font-style: italic;
+    color: red;
+}
+p {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(10, 147, 117);
+}
+
+/* Footer */
+footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: lightgray;
+    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li {
+    justify-content: center;
+    margin: 0 15px;
+}
+
+
+
