@@ -84,6 +84,11 @@
                 <ol>
                     <li><a href="weeks/week8/people.php">people.php</a></li>
                 </ol>
+                </ol>
+                <h3>Week Nine</h3>
+                <ol>
+                    <li><a href="weeks/week9/register.php">register.php</a></li>
+                </ol>
         </aside>
         <footer>
             <ul>
