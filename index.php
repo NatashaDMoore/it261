@@ -33,7 +33,7 @@
             <h3>Quick Links</h3>
                 <ol>
                     <li style="list-style-type: circle;"><a href="website/index.php">Website</a></li>
-                    <li style="list-style-type: circle;"><a href="adminer-4.8.1.php">Adminer</a></li>
+                    <li style="list-style-type: circle;"><a href="../adminer.php">Adminer</a></li>
                 </ol>
             <h3>Week Two</h3>
                 <ol>
