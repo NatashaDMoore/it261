@@ -2,7 +2,7 @@
 
 include('config.php');
 include('./includes/header.php');
-include('credentials.php');
+
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -15,10 +15,6 @@ error_reporting(E_ALL);
 <h1>Independent Films</h1>
 <main>
 <?php
-
-// name year directors stars plot
-
-
 
 $sql = 'SELECT * FROM film';
 // must now connect to database

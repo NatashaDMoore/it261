@@ -452,11 +452,13 @@ $people['Johannes_Vermeer'] = 'verme_pearl_Girl with a Pearl Earring';
 // end Gallery
 
 
+
+
 // Film Page
 
 define('DEBUG', 'TRUE');  // We want to see errors
 
-include('credentials.php');
+include('credentials.php'); // include credentials
 
 function myError($myFile, $myLine, $errorMsg)
 {
